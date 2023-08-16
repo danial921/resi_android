@@ -29,8 +29,12 @@ class LoginFragment : Fragment() {
 
     private fun setListener(){
         binding.apply {
-            btnSignin.setOnClickListener {
+            tvRegistNow.setOnClickListener{
                 findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+            }
+
+            btnSignin.setOnClickListener {
+                findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
             }
         }
     }
