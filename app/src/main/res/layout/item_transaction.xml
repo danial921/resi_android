@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="history"
+            type="com.example.resi_android_new.data.response.GetHistoryPayment" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <com.github.captain_miao.optroundcardview.OptRoundCardView
+            android:layout_width="match_parent"
+            app:optRoundCardCornerRadius="8dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_indomaret"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothica1_semibold"
+                    android:textSize="13dp"
+                    android:id="@+id/tvTitle"
+                    android:layout_below="@id/ivLogo"
+                    android:text="@{history.title, default = `Indomaret Keputih No.24`}"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothica1_regular"
+                    android:textSize="11dp"
+                    android:id="@+id/tvdate"
+                    android:layout_below="@id/tvTitle"
+                    android:text="@{history.date_time, default = `Minggu, 26 Juni 2023`}"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/tvdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gothica1_medium"
+                        android:textSize="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toStartOf="@id/priceTotal"
+                        android:textColor="@color/main_black_62"
+                        android:text="Total Belanja"/>
+                    <TextView
+                        android:id="@+id/priceTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gothica1_bold"
+                        android:textSize="14dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@id/tvTotal"
+                        android:textColor="@color/main_red"
+                        android:text="@{history.total, default = `Rp. 3.005.610,00`}"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+    </androidx.cardview.widget.CardView>
+</layout>

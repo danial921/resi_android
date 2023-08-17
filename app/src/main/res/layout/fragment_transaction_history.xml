@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.TransactionHistory">
+
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/ivBackIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_back_simple"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaksi Histori"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14dp"
+            android:textColor="@color/main_dark_blue"
+            android:layout_centerHorizontal="true"/>
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/searchInputComponent"
+                app:startIconDrawable="@drawable/ic_search"
+                android:layout_below="@id/ivBackIcon"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeWidth="2dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                android:layout_marginTop="10dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxStrokeColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailInput"
+                    android:padding="0dp"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/gothica1_regular"
+                    android:textSize="10dp"
+                    android:hint="cari nama atau jenis transaksi"
+                    android:textColorHint="@color/main_black_32"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTransaction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/searchInputComponent"
+                    tools:listitem="@layout/item_transaction"/>
+</RelativeLayout>
+
+</FrameLayout>

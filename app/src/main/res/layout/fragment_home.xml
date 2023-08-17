@@ -186,33 +186,33 @@
 
                 </LinearLayout>
             </LinearLayout>
-<!--            <RelativeLayout-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content">-->
-<!--                <TextView-->
-<!--                    android:id="@+id/tvInformationTitle"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Resi Informasi"-->
-<!--                    android:fontFamily="@font/gothica1_extrabold"-->
-<!--                    android:textSize="15dp"-->
-<!--                    android:textColor="@color/main_dark_blue"-->
-<!--                    />-->
-<!--                <androidx.recyclerview.widget.RecyclerView-->
-<!--                    android:id="@+id/recInvormation"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:layout_below="@id/tvInformationTitle"-->
-<!--                    tools:listitem="@layout/item_information"/>-->
-<!--            </RelativeLayout>-->
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvInfromationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resi Informasi"
+                    android:fontFamily="@font/gothica1_extrabold"
+                    android:textSize="15dp"
+                    android:textColor="@color/main_dark_blue"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvInfromationTitle"
+                    tools:listitem="@layout/item_information_history"/>
+            </RelativeLayout>
                 <RelativeLayout
                     android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/tvInformationTitle"
+                        android:id="@+id/tvHistoryTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Riwayat Pembelian"
@@ -220,18 +220,21 @@
                         android:textSize="15dp"
                         android:textColor="@color/main_dark_blue"
                         />
-                    <ImageView
+                    <ImageButton
+                        android:backgroundTint="@color/transparent"
+                        android:id="@+id/ivShowAllTransaction"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_showall"
                         android:layout_alignParentRight="true"
                         android:layout_marginTop="10dp"/>
+
                     <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/rvInvormation"
+                        android:id="@+id/rvHistory"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:layout_below="@id/tvInformationTitle"
+                        android:layout_below="@id/tvHistoryTitle"
                         tools:listitem="@layout/item_history"/>
                 </RelativeLayout>
         </LinearLayout>

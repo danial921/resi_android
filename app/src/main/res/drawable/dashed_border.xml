@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Border putus-putus di bagian atas -->
+    <item
+        android:top="-2dp"
+        android:left="-2dp"
+        android:right="-2dp"
+        android:bottom="0dp">
+        <shape android:shape="line">
+            <stroke
+                android:color="#000000"
+                android:dashWidth="8dp"
+                android:dashGap="4dp"
+                android:width="2dp"/>
+        </shape>
+    </item>
+
+    <!-- Border putus-putus di bagian bawah -->
+    <item
+        android:top="0dp"
+        android:left="-2dp"
+        android:right="-2dp"
+        android:bottom="-2dp">
+        <rotate
+            android:fromDegrees="180">
+            <shape android:shape="line">
+                <stroke
+                    android:color="#000000"
+                    android:dashWidth="8dp"
+                    android:dashGap="4dp"
+                    android:width="2dp"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
