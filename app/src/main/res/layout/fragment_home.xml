@@ -88,7 +88,7 @@
                     <com.github.captain_miao.optroundcardview.OptRoundCardView
                         android:id="@+id/btnHistory"
                         android:layout_marginHorizontal="30dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="75dp"
                         android:layout_height="wrap_content"
                         app:optRoundCardCornerRadius="10dp"
                         app:optRoundCardRightTopCorner="true"
@@ -120,7 +120,7 @@
                     <com.github.captain_miao.optroundcardview.OptRoundCardView
                         android:id="@+id/btnDaftarSawalayan"
                         android:layout_marginHorizontal="30dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="75dp"
                         android:layout_height="wrap_content"
                         app:optRoundCardCornerRadius="10dp"
                         app:optRoundCardRightTopCorner="true"
@@ -154,7 +154,7 @@
                     <com.github.captain_miao.optroundcardview.OptRoundCardView
                         android:id="@+id/btnFAQ"
                         android:layout_marginHorizontal="30dp"
-                        android:layout_width="wrap_content"
+                        android:layout_width="75dp"
                         android:layout_height="wrap_content"
                         app:optRoundCardCornerRadius="10dp"
                         app:optRoundCardRightTopCorner="true"

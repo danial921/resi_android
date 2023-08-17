@@ -37,7 +37,7 @@ class TransactionHistory : Fragment() {
     private fun setActionListener(){
         binding.apply {
             ivBackIcon.setOnClickListener{
-                findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+                 findNavController().navigate(R.id.action_transactionHistory_to_homeFragment)
             }
             rvTransaction.setOnClickListener {
                 findNavController().navigate(R.id.action_transactionHistory_to_fragmentDetailNota)
