@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_blue"
-    tools:context=".FragmentSplashScreen1">
+    tools:context=".ui.fragment.FragmentSplashScreen1">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:text="Jangan Biarkan Nota Penting Hilang Dengan Sendirinya"/>
         <ImageButton
+            android:id="@+id/ibNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/btn_lanjutkan"
@@ -36,4 +37,4 @@
             android:layout_marginTop="15dp"
             android:backgroundTint="@color/transparent"/>
     </RelativeLayout>
-</FrameLayout>
+</RelativeLayout>

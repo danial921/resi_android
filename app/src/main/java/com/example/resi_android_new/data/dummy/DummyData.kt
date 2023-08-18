@@ -130,6 +130,7 @@ object DummyData {
           ]
     }
   """.trimIndent()
+
   val historyTransaction = """
     [
       {
@@ -195,4 +196,22 @@ object DummyData {
     ]
   
   """.trimIndent()
+
+  val FAQItem = """
+      [
+          {
+            "title": "Judul 1", 
+            "content": "Isi 1"
+          },
+          {
+            "title": "Judul 2", 
+            "content": "Isi 2"
+          },
+          {
+            "title": "Judul 3", 
+            "content": "Isi 3"
+          }
+      
+      ]
+    """.trimIndent()
 }

@@ -32,6 +32,9 @@ class RegisterFragment : Fragment() {
             ivBack.setOnClickListener{
                 findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
             }
+            tvForgotPassword.setOnClickListener{
+                findNavController().navigate(R.id.action_registerFragment_to_fragmentForgetPassword)
+            }
         }
     }
 }

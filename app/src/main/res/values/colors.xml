@@ -17,4 +17,10 @@
     <color name="transparent">#00FFFFFF</color>
     <color name="grey_42">#6BCCCCCC</color>
     <color name="main_green">#00D566</color>
+    <color name="grey_100">#5C5D61</color>
+    <color name="main_white_62">#9EFFFFFF</color>
+    <color name="main_white_10">#FFFFFF</color>
+    <color name="main_white_82">#FFFFFF</color>
+    <color name="main_black">#000000</color>
+    <color name="main_soft_blue_12">#1F2DAAFF</color>
 </resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="faq"
+            type="com.example.resi_android_new.data.response.GetFAQInformation" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/transparent"
+                android:layout_margin="8dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:orientation="vertical">
+
+                    <com.github.captain_miao.optroundcardview.OptRoundCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:padding="16dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/gothica1_semibold"
+                                android:textSize="13dp"
+                                android:textColor="@color/main_black"
+                                android:text="@{faq.title, default=`Lorem Ipsum`}"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_faq_dropdown" />
+                        </RelativeLayout>
+                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                    <!-- Body -->
+                    <com.github.captain_miao.optroundcardview.OptRoundCardView
+                        android:id="@+id/cardContent"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:padding="16dp"
+                            android:background="@color/main_soft_blue_12"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvContent"
+                                android:layout_width="340dp"
+                                android:fontFamily="@font/gothica1_regular"
+                                android:textSize="12dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/main_black"
+                                android:text="@{faq.content, default=`Jawaban Dari Lorem Ipsum`}" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_faq_dropdown" />
+                        </RelativeLayout>
+                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -165,6 +165,7 @@
             android:text="@string/login" />
 
         <TextView
+            android:id="@+id/tvForgotPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/btnSignin"
@@ -191,6 +192,7 @@
             tools:ignore="TextSizeCheck" />
 
         <TextView
+            android:paddingBottom="40dp"
             android:id="@+id/tvRegistNow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

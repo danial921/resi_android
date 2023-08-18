@@ -25,7 +25,6 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         binding = FragmentHomeBinding.inflate(layoutInflater)
         return binding.root
     }
@@ -33,11 +32,11 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setListener()
-        getHistoryTicket()
+        getHistoryPaymeent()
         getInformation()
     }
 
-    private fun getHistoryTicket() {
+    private fun getHistoryPaymeent() {
 
         val dummyData = DummyData.previewHistoryTransaction
         val historyItems: List<GetPreviewHistoryPayment> = Gson().fromJson(dummyData, object : TypeToken<List<GetPreviewHistoryPayment>>() {}.type)

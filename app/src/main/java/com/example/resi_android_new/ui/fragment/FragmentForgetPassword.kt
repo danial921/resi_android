@@ -1,10 +1,11 @@
-package com.example.resi_android_new
+package com.example.resi_android_new.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.resi_android_new.R
 
 class FragmentForgetPassword : Fragment() {
     override fun onCreateView(

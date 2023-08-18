@@ -7,37 +7,30 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.resi_android_new.R
-import com.example.resi_android_new.databinding.FragmentLoginBinding
+import com.example.resi_android_new.databinding.FragmentSplashscreen1Binding
 
-class LoginFragment : Fragment() {
-    private lateinit var binding : FragmentLoginBinding
+class FragmentSplashScreen1 : Fragment() {
+    private lateinit var binding : FragmentSplashscreen1Binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        binding = FragmentLoginBinding.inflate(layoutInflater)
+        binding = FragmentSplashscreen1Binding.inflate(inflater, container, false)
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setListener()
+        setOnClickListener()
     }
 
-    private fun setListener(){
+    private fun setOnClickListener () {
         binding.apply {
-            tvRegistNow.setOnClickListener{
+            ibNext.setOnClickListener{
                 findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
             }
-            tvForgotPassword.setOnClickListener {
-                findNavController().navigate(R.id.action_loginFragment_to_fragmentForgetPassword)
-            }
 
-            btnSignin.setOnClickListener {
-                findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
-            }
         }
     }
+
 }

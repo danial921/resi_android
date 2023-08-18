@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentScanQrLight">
+
+    <LinearLayout
+        android:id="@+id/cardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="24dp">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_simple_black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Nota"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dark_mode"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ivQrCode"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/qr_code"
+        android:layout_below="@id/cardHeader"
+        />
+    <RelativeLayout
+        android:id="@+id/cardCaraPenggunaan"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/ivQrCode"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvTutorial"
+            android:fontFamily="@font/gothica1_medium"
+            android:textSize="11dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cara Penggunaan"/>
+        <View
+            android:layout_toRightOf="@id/tvTutorial"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="@color/main_white_62"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/cardCaraPenggunaan"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="15dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/icScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_scan_light"/>
+        <TextView
+            android:layout_toRightOf="@id/icScan"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arahkan QR code ke scanner resi"
+            android:fontFamily="@font/gothica1_semibold"
+            android:textSize="12dp"
+            android:textColor="@color/main_black"/>
+    </RelativeLayout>
+
+
+    <com.github.captain_miao.optroundcardview.OptRoundCardView
+        android:id="@+id/headerLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_alignParentBottom="true"
+        app:optRoundCardBackgroundColor="@color/main_blue"
+        app:optRoundCardCornerRadius="32dp"
+        app:optRoundCardRightTopCorner="true"
+        app:optRoundCardLeftTopCorner="true"
+        android:layout_centerVertical="true"
+        app:optRoundCardLeftBottomCorner="false"
+        app:optRoundCardRightBottomCorner="false">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="30dp"
+            android:paddingHorizontal="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profil Saya"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="15dp"
+                android:textColor="@color/main_white"/>
+
+            <RelativeLayout
+                android:id="@+id/contanerHeader"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ivFotoProfile"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_profile"/>
+                <TextView
+                    android:id="@+id/tvProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothica1_semibold"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/ivFotoProfile"
+                    android:textColor="@color/white"
+                    android:text="Danial Farros Maulana"/>
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gothica1_regular"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/ivFotoProfile"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/tvProfile"
+                    android:text="danialfarrosmaulana921@gmail.com"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID Customer"
+                android:fontFamily="@font/gothica1_semibold"
+                android:textColor="@color/white"
+                android:textSize="13dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordInputContainer"
+                app:startIconDrawable="@drawable/ic_human_white"
+                android:layout_below="@id/labelPassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black"
+                android:layout_marginTop="7dp"
+                app:boxBackgroundColor="@color/blue_10"
+                app:boxStrokeWidth="0dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxStrokeColor="@color/black"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:layout_marginBottom="10dp"
+                    android:text="123456789456123"
+                    android:textColor="@color/main_white"
+                    android:inputType="textPassword"
+                    android:backgroundTint="@color/main_white_10"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+</RelativeLayout>
