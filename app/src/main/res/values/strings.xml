@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Resi_android_new</string>
+    <string name="app_name">RESI (Responsive Electronic System Invoice)</string>
     <string name="title_activity_main_navigation">MainNavigation</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
