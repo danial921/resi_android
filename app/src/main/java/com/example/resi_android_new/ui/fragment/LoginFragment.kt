@@ -49,10 +49,10 @@ class LoginFragment : Fragment() {
     private fun setListener(){
         binding.apply {
             tvRegistNow.setOnClickListener{
-                findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+                findNavController().navigate(R.id.action_global_registerFragment)
             }
             tvForgotPassword.setOnClickListener {
-                findNavController().navigate(R.id.action_loginFragment_to_fragmentForgetPassword)
+                findNavController().navigate(R.id.action_global_fragmentForgetPassword)
             }
             btnSignin.setOnClickListener {
                 signInUser()

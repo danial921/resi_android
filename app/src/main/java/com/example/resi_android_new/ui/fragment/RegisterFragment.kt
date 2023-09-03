@@ -27,13 +27,16 @@ class RegisterFragment : Fragment() {
     private fun setListener(){
         binding.apply {
             btnSignup.setOnClickListener{
-                findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+                findNavController().navigate(R.id.action_global_loginFragment)
             }
             ivBack.setOnClickListener{
-                findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+                findNavController().navigate(R.id.action_global_loginFragment)
             }
             tvForgotPassword.setOnClickListener{
-                findNavController().navigate(R.id.action_registerFragment_to_fragmentForgetPassword)
+                findNavController().navigate(R.id.action_global_fragmentForgetPassword)
+            }
+            tvLoginSekarang.setOnClickListener{
+                findNavController().navigate(R.id.action_global_loginFragment)
             }
         }
     }

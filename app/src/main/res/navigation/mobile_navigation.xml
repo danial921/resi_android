@@ -10,12 +10,6 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_registerFragment"
-            app:destination="@id/registerFragment" />
-        <action
-            android:id="@+id/action_loginFragment_to_fragmentForgetPassword"
-            app:destination="@id/fragmentForgetPassword" />
-        <action
             android:id="@+id/action_loginFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
@@ -23,14 +17,7 @@
         android:id="@+id/registerFragment"
         android:name="com.example.resi_android_new.ui.fragment.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" >
-        <action
-            android:id="@+id/action_registerFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_registerFragment_to_fragmentForgetPassword"
-            app:destination="@id/fragmentForgetPassword" />
-    </fragment>
+        tools:layout="@layout/fragment_register" />
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.resi_android_new.ui.fragment.HomeFragment"
@@ -106,11 +93,7 @@
         android:id="@+id/fragmentForgetPassword"
         android:name="com.example.resi_android_new.ui.fragment.FragmentForgetPassword"
         android:label="fragment_forget_password"
-        tools:layout="@layout/fragment_forget_password" >
-        <action
-            android:id="@+id/action_fragmentForgetPassword_to_loginFragment"
-            app:destination="@id/loginFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_forget_password" />
     <fragment
         android:id="@+id/fragmentFaq"
         android:name="com.example.resi_android_new.ui.fragment.FragmentFaq"
@@ -150,4 +133,10 @@
     <action
         android:id="@+id/action_global_fragmrntScanQr"
         app:destination="@id/fragmrntScanQr" />
+    <action
+        android:id="@+id/action_global_fragmentForgetPassword"
+        app:destination="@id/fragmentForgetPassword" />
+    <action
+        android:id="@+id/action_global_registerFragment"
+        app:destination="@id/registerFragment" />
 </navigation>
