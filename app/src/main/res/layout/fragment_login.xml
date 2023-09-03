@@ -10,203 +10,203 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
-    <com.github.captain_miao.optroundcardview.OptRoundCardView
-        android:id="@+id/headerLogin"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="76dp"
-        android:layout_alignParentBottom="true"
-        app:optRoundCardBackgroundColor="@color/white"
-        app:optRoundCardCornerRadius="32dp"
-        app:optRoundCardRightTopCorner="true"
-        app:optRoundCardLeftTopCorner="true"
-        android:layout_centerVertical="true"
-        app:optRoundCardLeftBottomCorner="false"
-        app:optRoundCardRightBottomCorner="false">
-    <LinearLayout
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/tvWelcomeBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="@string/selamat_datang_login"
-            android:textColor="@color/main_blue"
-            android:textSize="28sp"
-            android:textAlignment="center"
-            android:fontFamily="@font/poppins_semibold"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvSubtitleWelcomeBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sub_selamat_datang"
-            android:textColor="@color/main_blue"
-            android:textSize="14sp"
-            android:textAlignment="center"
-            android:fontFamily="@font/poppins_light"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:layout_marginTop="30dp"
-            android:id="@+id/ivResi"
-            android:layout_width="104dp"
-            android:layout_height="104dp"
-            android:src="@drawable/ic_resi_circle"/>
-
-
-        <RelativeLayout
+        <com.github.captain_miao.optroundcardview.OptRoundCardView
+            android:id="@+id/headerLogin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/labelEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="30dp"
-                android:fontFamily="@font/gothica1_semibold"
-                android:text="@string/masukkan_email"
-                android:textColor="@color/black"
-                android:textSize="12dp"
-                android:textStyle="bold"
-                tools:ignore="TextSizeCheck" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/emailInputContainer"
-                app:startIconDrawable="@drawable/ic_mail"
-                android:layout_below="@id/labelEmail"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="match_parent"
+            android:layout_marginTop="76dp"
+            android:layout_alignParentBottom="true"
+            app:optRoundCardBackgroundColor="@color/white"
+            app:optRoundCardCornerRadius="32dp"
+            app:optRoundCardRightTopCorner="true"
+            app:optRoundCardLeftTopCorner="true"
+            android:layout_centerVertical="true"
+            app:optRoundCardLeftBottomCorner="false"
+            app:optRoundCardRightBottomCorner="false">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColorHint="@color/black"
-                app:hintTextColor="@color/black"
-                android:layout_marginTop="2dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                app:boxBackgroundColor="@color/white"
-                app:boxStrokeWidth="2dp"
-                app:boxCornerRadiusTopStart="8dp"
-                app:boxCornerRadiusTopEnd="8dp"
-                app:boxCornerRadiusBottomStart="8dp"
-                app:boxCornerRadiusBottomEnd="8dp"
-                app:boxStrokeColor="@color/black">
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvWelcomeBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/selamat_datang_login"
+                    android:textColor="@color/main_blue"
+                    android:textSize="28sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textStyle="bold" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/emailInput"
+                <TextView
+                    android:id="@+id/tvSubtitleWelcomeBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sub_selamat_datang"
+                    android:textColor="@color/main_blue"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_light"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/ivResi"
+                    android:layout_width="104dp"
+                    android:layout_height="104dp"
+                    android:src="@drawable/ic_resi_circle"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/labelEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/gothica1_semibold"
+                        android:text="@string/masukkan_email"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        tools:ignore="TextSizeCheck" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/emailInputContainer"
+                        app:startIconDrawable="@drawable/ic_mail"
+                        android:layout_below="@id/labelEmail"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/black"
+                        app:hintTextColor="@color/black"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxStrokeWidth="2dp"
+                        app:boxCornerRadiusTopStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxStrokeColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/emailInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/labelPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/masukkan_password"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/gothica1_semibold"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/passwordInputContainer"
+                        app:startIconDrawable="@drawable/ic_lock"
+                        android:layout_below="@id/labelPassword"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/black"
+                        app:hintTextColor="@color/black"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        app:boxBackgroundColor="@color/blue_10"
+                        app:boxStrokeWidth="0dp"
+                        app:boxCornerRadiusTopStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxStrokeColor="@color/black"
+                        app:endIconMode="password_toggle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/passwordInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/btnSignin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"
-                    tools:ignore="SpeakableTextPresentCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/labelPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="30dp"
-                android:text="@string/masukkan_password"
-                android:textColor="@color/black"
-                android:fontFamily="@font/gothica1_semibold"
-                android:textSize="12dp"
-                android:textStyle="bold" />
+                    android:layout_below="@+id/passwordInputContainer"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:backgroundTint="@color/main_blue"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/login" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/passwordInputContainer"
-                app:startIconDrawable="@drawable/ic_lock"
-                android:layout_below="@id/labelPassword"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColorHint="@color/black"
-                app:hintTextColor="@color/black"
-                android:layout_marginTop="2dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                app:boxBackgroundColor="@color/blue_10"
-                app:boxStrokeWidth="0dp"
-                app:boxCornerRadiusTopStart="8dp"
-                app:boxCornerRadiusTopEnd="8dp"
-                app:boxCornerRadiusBottomStart="8dp"
-                app:boxCornerRadiusBottomEnd="8dp"
-                app:boxStrokeColor="@color/black"
-                app:endIconMode="password_toggle">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/passwordInput"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
-                    tools:ignore="SpeakableTextPresentCheck" />
-            </com.google.android.material.textfield.TextInputLayout>
-        </RelativeLayout>
-        <Button
-            android:id="@+id/btnSignin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/passwordInputContainer"
-            android:layout_centerInParent="true"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:backgroundTint="@color/main_blue"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:text="@string/login" />
+                    android:layout_below="@+id/btnSignin"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/gothica1_extrabold"
+                    android:text="@string/lupa_password"
+                    android:textColor="@color/main_blue"
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck" />
 
-        <TextView
-            android:id="@+id/tvForgotPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnSignin"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="24dp"
-            android:fontFamily="@font/gothica1_extrabold"
-            android:text="@string/lupa_password"
-            android:textColor="@color/main_blue"
-            android:textSize="13dp"
-            tools:ignore="TextSizeCheck" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnSignin"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/gothica1_semibold"
+                    android:text="@string/atau"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnSignin"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="24dp"
-            android:fontFamily="@font/gothica1_semibold"
-            android:text="@string/atau"
-            android:textColor="@color/black"
-            android:textSize="12dp"
-            tools:ignore="TextSizeCheck" />
-
-        <TextView
-            android:paddingBottom="40dp"
-            android:id="@+id/tvRegistNow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnSignin"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="24dp"
-            android:fontFamily="@font/gothica1_extrabold"
-            android:text="@string/daftar_disini"
-            android:textColor="@color/main_blue"
-            android:textSize="13dp"
-            tools:ignore="TextSizeCheck" />
-    </LinearLayout>
-    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+                <TextView
+                    android:paddingBottom="40dp"
+                    android:id="@+id/tvRegistNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnSignin"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:fontFamily="@font/gothica1_extrabold"
+                    android:text="@string/daftar_disini"
+                    android:textColor="@color/main_blue"
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
     </androidx.core.widget.NestedScrollView>
 
 </RelativeLayout>

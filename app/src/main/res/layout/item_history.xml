@@ -5,7 +5,7 @@
     <data>
     <variable
         name="history"
-        type="com.example.resi_android_new.data.response.GetPreviewHistoryPayment" />
+        type="com.example.resi_android_new.data.response.DetailHistoryPayment" />
     </data>
 
     <androidx.cardview.widget.CardView

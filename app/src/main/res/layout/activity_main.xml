@@ -55,6 +55,7 @@
             </RelativeLayout>
         </com.github.captain_miao.optroundcardview.OptRoundCardView>
         <ImageButton
+            android:id="@+id/ibScanQR"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
             android:layout_width="wrap_content"

@@ -142,6 +142,13 @@ class LoginFragment : Fragment() {
                 userVM.getLoginErrorMessage().observe(viewLifecycleOwner) {
 //                    showLoading(false)
                     val errMessage = it
+                    if (errMessage.contains("Unauthorized")) {
+                        Toast.makeText(
+                            requireContext(),
+                            "email atau password belum terdaftar",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
                     if (errMessage.contains("Email does not exist")) {
                         Toast.makeText(
                             requireContext(),
@@ -166,8 +173,8 @@ class LoginFragment : Fragment() {
     private fun saveUserToSharedPref(idUser : String, name : String, email: String, phoneNumber: String , token : String){
         with(editor) {
             putString("token", token)
-            putString("token", phoneNumber)
-            putString("token", email)
+            putString("phoneNumber", phoneNumber)
+            putString("email", email)
             putString("idUser", idUser)
             putString("name", name)
             putBoolean("isLogin", true)

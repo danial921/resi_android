@@ -5,11 +5,11 @@
     <data>
         <variable
             name="history"
-            type="com.example.resi_android_new.data.response.GetHistoryPayment" />
+            type="com.example.resi_android_new.data.response.DetailHistoryPayment" />
     </data>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card"
+        android:id="@+id/cardHistory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp">
@@ -58,7 +58,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_toStartOf="@id/priceTotal"
                         android:textColor="@color/main_black_62"
-                        android:text="Total Belanja"/>
+                        android:text="@string/total_belanja"/>
                     <TextView
                         android:id="@+id/priceTotal"
                         android:layout_width="wrap_content"

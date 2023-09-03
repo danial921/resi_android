@@ -1,11 +1,8 @@
 package com.example.resi_android_new.data.remote
 
-import com.example.resi_android_new.data.response.LoginResponse
+import com.example.resi_android_new.data.response.*
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface APIService {
 
@@ -13,4 +10,9 @@ interface APIService {
     @FormUrlEncoded
     fun loginUser(@Field("email") email : String, @Field("password") password : String) : Call<LoginResponse>
 
+    @GET("bill")
+    fun getAllBill(@Header("Authorization") token : String, @Query("limit") limit : Int) : Call<GetHistoryPayment>
+
+    @GET("bill/{idBill}")
+    fun getDetailBillById(@Path("idBill") idBill : String) : Call<ApiGetdetailNota>
 }

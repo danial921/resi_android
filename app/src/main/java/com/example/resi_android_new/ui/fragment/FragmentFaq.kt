@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.resi_android_new.R
 import com.example.resi_android_new.data.dummy.DummyData
@@ -33,8 +34,15 @@ class FragmentFaq : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         getHistoryFAQ()
+        setActionLisener()
     }
-
+    private fun setActionLisener(){
+        binding.apply {
+            ivBack.setOnClickListener{
+                findNavController().navigate(R.id.action_global_homeFragment)
+            }
+        }
+    }
     private fun getHistoryFAQ() {
 
         val dummyData = DummyData.FAQItem

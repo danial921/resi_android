@@ -27,7 +27,7 @@ class FragmentSplashScreen1 : Fragment() {
     private fun setOnClickListener () {
         binding.apply {
             ibNext.setOnClickListener{
-                findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+                findNavController().navigate(R.id.action_fragmentSplashScreen1_to_fragmentSplashscreen2)
             }
 
         }

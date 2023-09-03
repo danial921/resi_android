@@ -14,6 +14,19 @@ data class GetPreviewHistoryPayment(
 ): java.io.Serializable
 
 data class GetHistoryPayment(
+    @field:SerializedName("status")
+    val status: String,
+
+    @field:SerializedName("message")
+    val message: String,
+
+    @field:SerializedName("bill")
+    val bill: List<DetailHistoryPayment>
+): java.io.Serializable
+data class DetailHistoryPayment(
+    @field:SerializedName("bill_id")
+    val id: String,
+
     @field:SerializedName("logo")
     val logo: String,
 
