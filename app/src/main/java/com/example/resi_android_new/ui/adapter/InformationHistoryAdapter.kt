@@ -14,8 +14,10 @@ class InformationHistoryAdapter (private val listInformation : List<GetPreviewIn
             binding.tvtitle.text = item.title
             binding.tvDate.text = item.date_time
             binding.tvLike.text = item.like
+
         }
     }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = ItemInformationHistoryBinding.inflate(LayoutInflater.from(parent.context), parent, false)

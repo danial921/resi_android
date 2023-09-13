@@ -151,7 +151,7 @@
                     android:textColor="@color/white"
                     android:text="Danial Farros Maulana"/>
                 <TextView
-                    android:id="@+id/email"
+                    android:id="@+id/tvEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/gothica1_regular"
@@ -192,7 +192,7 @@
                 app:endIconMode="password_toggle">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/passwordInput"
+                    android:id="@+id/IdCustomer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:enabled="false"

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.resi_android_new.R
 import com.example.resi_android_new.data.response.DetailHistoryPayment
 import com.example.resi_android_new.data.response.GetHistoryPayment
@@ -23,10 +24,12 @@ class PaymentAdapter (private val listpayment : List<DetailHistoryPayment>) : Re
             binding.tvdate.text = item.date_time
             binding.priceTotal.text = item.total
 
-            val imgResId = itemView.context.resources.getIdentifier(item.logo, "drawable", itemView.context.packageName)
-            if (imgResId != 0) {
-                binding.ivLogo.setImageResource(imgResId)
-            }
+
+
+            val imageUrl = "https://apiresi.happyhosting.my.id/api/storage/${item.logo}" // Asumsikan "url" adalah URL dasar Anda.
+            Glide.with(itemView.context)
+                .load(imageUrl)
+                .into(binding.ivLogo)
             binding.cardHistory.setOnClickListener {
                 onClick?.invoke(item)
             }

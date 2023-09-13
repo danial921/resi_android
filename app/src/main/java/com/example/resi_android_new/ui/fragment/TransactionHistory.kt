@@ -60,7 +60,6 @@ class TransactionHistory : Fragment() {
         }
     }
     private fun getTransaction() {
-
         val token = requireActivity().getSharedPreferences(Constant.dataUser, Context.MODE_PRIVATE).getString("token", null)
         if (token != null) {
             Log.d("Debug", "Home Check")
@@ -85,6 +84,4 @@ class TransactionHistory : Fragment() {
             findNavController().navigate(R.id.action_transactionHistory_to_fragmentDetailNota)
         }
     }
-
-
 }

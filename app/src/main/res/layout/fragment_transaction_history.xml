@@ -22,47 +22,47 @@
             android:layout_height="wrap_content"
             android:text="Transaksi Histori"
             android:fontFamily="@font/poppins_medium"
-            android:textSize="14dp"
+            android:textSize="16sp"
             android:textColor="@color/main_dark_blue"
             android:layout_centerHorizontal="true"/>
-        <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/searchInputComponent"
-                app:startIconDrawable="@drawable/ic_search"
-                android:layout_below="@id/ivBackIcon"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:textColorHint="@color/black"
-                app:hintTextColor="@color/black"
-                app:boxBackgroundColor="@color/white"
-                app:boxStrokeWidth="2dp"
-                app:boxCornerRadiusTopStart="8dp"
-                app:boxCornerRadiusTopEnd="8dp"
-                app:boxCornerRadiusBottomStart="8dp"
-                android:layout_marginTop="10dp"
-                app:boxCornerRadiusBottomEnd="8dp"
-                app:boxStrokeColor="@color/black">
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/searchInputComponent"-->
+<!--                app:startIconDrawable="@drawable/ic_search"-->
+<!--                android:layout_below="@id/ivBackIcon"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:textColorHint="@color/black"-->
+<!--                app:hintTextColor="@color/black"-->
+<!--                app:boxBackgroundColor="@color/white"-->
+<!--                app:boxStrokeWidth="2dp"-->
+<!--                app:boxCornerRadiusTopStart="8dp"-->
+<!--                app:boxCornerRadiusTopEnd="8dp"-->
+<!--                app:boxCornerRadiusBottomStart="8dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:boxCornerRadiusBottomEnd="8dp"-->
+<!--                app:boxStrokeColor="@color/black">-->
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/emailInput"
-                    android:padding="0dp"
-                    android:layout_width="match_parent"
-                    android:fontFamily="@font/gothica1_regular"
-                    android:textSize="10dp"
-                    android:hint="cari nama atau jenis transaksi"
-                    android:textColorHint="@color/main_black_32"
-                    android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"
-                    tools:ignore="SpeakableTextPresentCheck" />
-                </com.google.android.material.textfield.TextInputLayout>
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/emailInput"-->
+<!--                    android:padding="0dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:fontFamily="@font/gothica1_regular"-->
+<!--                    android:textSize="10dp"-->
+<!--                    android:hint="cari nama atau jenis transaksi"-->
+<!--                    android:textColorHint="@color/main_black_32"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:inputType="textEmailAddress"-->
+<!--                    tools:ignore="SpeakableTextPresentCheck" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_marginBottom="200px"
                     android:id="@+id/rvTransaction"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_below="@id/searchInputComponent"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ivBackIcon"
                     tools:listitem="@layout/item_transaction"/>
 </RelativeLayout>
 

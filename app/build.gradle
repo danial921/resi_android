@@ -65,12 +65,14 @@ dependencies {
     //loading animation
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
 
-    //retrofit
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
-    implementation "com.squareup.okhttp3:logging-interceptor:4.9.3"
-
     //hilt DI
     implementation "com.google.dagger:hilt-android:2.44"
     kapt "com.google.dagger:hilt-compiler:2.44"
+
+    //Qr Code
+    implementation('com.journeyapps:zxing-android-embedded:4.3.0') { transitive = false }
+    implementation 'com.google.zxing:core:3.3.0'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
 }

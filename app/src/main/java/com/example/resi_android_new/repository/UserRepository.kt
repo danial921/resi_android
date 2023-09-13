@@ -15,6 +15,10 @@ class UserRepository @Inject constructor(var apiService: APIService) {
     private val _loginUser = MutableLiveData<LoginResponse?>()
     val loginUser: LiveData<LoginResponse?> = _loginUser
     val loginErrorMessage = MutableLiveData<String>()
+    private val _registerUser = MutableLiveData<RegisterResponse?>()
+    val registerUser: LiveData<RegisterResponse?> = _registerUser
+    val registerErrorMessage = MutableLiveData<String>()
+
 
 
     fun loginUser(email: String, password: String): LiveData<LoginResponse?> {
@@ -40,6 +44,31 @@ class UserRepository @Inject constructor(var apiService: APIService) {
             }
         })
         return loginUser
+    }
+
+    fun registerUser(name : String, email : String, phoneNumber : String, password : String) : LiveData<RegisterResponse?> {
+        apiService.registerUser(name, email,phoneNumber, password).enqueue(object : Callback<RegisterResponse> {
+            override fun onResponse(
+                call: Call<RegisterResponse>,
+                response: Response<RegisterResponse>
+            ) {
+                val dataResponse = response.body()
+                if (response.isSuccessful && dataResponse != null) {
+                    _registerUser.postValue(dataResponse)
+                    dataResponse.message.let { Log.e("Response message : ", it) }
+                } else if(response.code() == 400 || response.code() == 401) {
+                    _registerUser.postValue(null)
+                    val gson = GsonBuilder().create()
+                    val errorResponse = gson.fromJson(response.errorBody()?.string(), RegisterErrorResponse::class.java)
+                    registerErrorMessage.postValue(errorResponse.error)
+                }
+            }
+
+            override fun onFailure(call: Call<RegisterResponse>, t: Throwable) {
+                Log.d("Error onFailure : ", t.message!!)
+            }
+        })
+        return registerUser
     }
 
 

@@ -198,20 +198,24 @@ object DummyData {
   """.trimIndent()
 
   val FAQItem = """
-      [
-          {
-            "title": "Judul 1", 
-            "content": "Isi 1"
-          },
-          {
-            "title": "Judul 2", 
-            "content": "Isi 2"
-          },
-          {
-            "title": "Judul 3", 
-            "content": "Isi 3"
-          }
-      
-      ]
-    """.trimIndent()
+    [
+        {
+            "title": "Bagaimana cara kerja aplikasi RESI?", 
+            "content": "Setelah Anda bertransaksi di tempat yang menggunakan Alat Responsive Electronic System Invoice yang terintegrasi dengan RESI, Anda cukup melakukan scan barcode. Melalui proses ini, Anda dapat menerima dan menyimpan nota digital Anda di aplikasi."
+        },
+        {
+            "title": "Apakah saya harus menginstal aplikasi RESI?", 
+            "content": "Ya, Anda perlu menginstal aplikasi RESI di perangkat Anda untuk menggunakan fitur-fiturnya."
+        },
+        {
+            "title": "Seberapa aman nota digital di RESI?", 
+            "content": "Nota digital yang Anda terima melalui RESI dienkripsi dengan standar keamanan tinggi, memastikan bahwa informasi transaksi Anda tetap aman dan terlindungi."
+        },
+        {
+            "title": "Apakah menggunakan RESI membantu lingkungan?", 
+            "content": "Tentu saja! Dengan memilih nota digital melalui RESI, Anda turut berkontribusi mengurangi penggunaan kertas dan menciptakan lingkungan yang lebih ramah dengan mengurangi limbah kertas."
+        }
+    ]
+  """.trimIndent()
+
 }

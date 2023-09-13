@@ -17,6 +17,7 @@ import com.example.resi_android_new.databinding.FragmentSplashscreenBinding
 import com.example.resi_android_new.ui.activity.MainActivity
 
 
+
 class FragmentSplashscreen : Fragment() {
     private lateinit var binding : FragmentSplashscreenBinding
     private lateinit var sharedPref : SharedPreferences
@@ -53,7 +54,7 @@ class FragmentSplashscreen : Fragment() {
             else{
                 findNavController().navigate(R.id.action_fragmentSplashscreen_to_loginFragment)
             }
-        },1500)
+        },3000)
     }
 
 }

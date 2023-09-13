@@ -28,7 +28,7 @@ class AppModule {
             .addInterceptor(loggingInterceptor)
             .build()
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://10.0.2.2:8000/api/")
+            .baseUrl("http://apiresi.happyhosting.my.id/api/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
