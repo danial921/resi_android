@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Transaksi Histori"
+            android:text="@string/histori_transaksi"
             android:fontFamily="@font/poppins_medium"
             android:textSize="14dp"
             android:textColor="@color/main_dark_blue"
@@ -49,7 +49,7 @@
                     android:layout_width="match_parent"
                     android:fontFamily="@font/gothica1_regular"
                     android:textSize="10dp"
-                    android:hint="cari nama atau jenis transaksi"
+                    android:hint="@string/cari_nama_atau_jenis_transaksi"
                     android:textColorHint="@color/main_black_32"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"

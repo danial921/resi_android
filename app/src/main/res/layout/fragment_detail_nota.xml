@@ -65,7 +65,7 @@
                         android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="PT. Indomaret Primatama"
+                        android:text="@string/pt_indomaret_primatama"
                         android:textStyle="bold"
                         android:textSize="17sp"/>
 
@@ -75,7 +75,7 @@
                         android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Jl. Keputih No. 3 Sukolilo, Surabaya, Jawa Timur"
+                        android:text="@string/jl_keputih_no_3_sukolilo_surabaya_jawa_timur"
                         android:textSize="12sp" />
 
                     <TextView
@@ -121,14 +121,14 @@
                         android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="No."
+                        android:text="@string/no"
                         android:textSize="12sp" />
                     <TextView
                         android:fontFamily="@font/poppins_regular"
                         android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tgl Pembelian"
+                        android:text="@string/tgl_pembelian"
                         android:textSize="12sp" />
                 </LinearLayout>
                 <LinearLayout
@@ -151,7 +151,7 @@
                         android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=": 06 Juni 2023"
+                        android:text="@string/_06_juni_2023"
                         android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -180,13 +180,13 @@
                     android:textAlignment="textStart"
                     android:scrollbarSize="12dp"
                     android:layout_height="wrap_content"
-                    android:text="item"
+                    android:text="@string/item"
                     android:textSize="12sp"
                     android:textStyle="bold" />
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
-                    android:text="qty"
+                    android:text="@string/qty"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/black"
                     android:paddingLeft="1dp"
@@ -195,7 +195,7 @@
                 <TextView
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
-                    android:text="unit cost"
+                    android:text="@string/unit_cost"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/black"
                     android:paddingLeft="1dp"
@@ -204,7 +204,7 @@
                 <TextView
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
-                    android:text="total cost"
+                    android:text="@string/total_cost"
                     android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/black"
                     android:paddingLeft="1dp"
@@ -229,7 +229,7 @@
                     android:textColor="@color/black"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
-                    android:text="Diskon"
+                    android:text="@string/diskon"
                     android:textSize="12sp"/>
                 <TextView
                     android:id="@+id/tvDiscount"
@@ -254,7 +254,7 @@
                     android:textColor="@color/black"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
-                    android:text="Harga Jual"
+                    android:text="@string/harga_jual"
                     android:textSize="12sp"/>
                 <TextView
                     android:id="@+id/tvSellPrice"
@@ -277,7 +277,7 @@
                     android:textColor="@color/black"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
-                    android:text="Total"
+                    android:text="@string/total"
                     android:textSize="12sp"/>
                 <TextView
                     android:id="@+id/tvTotalPrice"

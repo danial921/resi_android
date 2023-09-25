@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/fragmentSplashscreen">
+    app:startDestination="@id/fragmentProfile">
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.resi_android_new.ui.fragment.LoginFragment"
@@ -88,7 +88,14 @@
         android:id="@+id/fragmentProfile"
         android:name="com.example.resi_android_new.ui.fragment.FragmentProfile"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentKetentuanLayanan"
+            app:destination="@id/fragmentKetentuanLayanan" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentKebijakanPrivasi"
+            app:destination="@id/fragmentKebijakanPrivasi" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentForgetPassword"
         android:name="com.example.resi_android_new.ui.fragment.FragmentForgetPassword"
@@ -139,4 +146,13 @@
     <action
         android:id="@+id/action_global_registerFragment"
         app:destination="@id/registerFragment" />
+    <fragment
+        android:id="@+id/fragmentKebijakanPrivasi"
+        android:name="com.example.resi_android_new.ui.fragment.FragmentKebijakanPrivasi"
+        android:label="FragmentKebijakanPrivasi" />
+    <fragment
+        android:id="@+id/fragmentKetentuanLayanan"
+        android:name="com.example.resi_android_new.ui.fragment.FragmentKetentuanLayanan"
+        android:label="fragment_layanan"
+        tools:layout="@layout/fragment_layanan" />
 </navigation>

@@ -90,7 +90,8 @@
                         android:id="@+id/tvStatus"
                         android:layout_toRightOf="@id/ivIconStatus"
                         android:layout_marginLeft="10dp"
-                        android:text="Akun Terverifikasi"
+                        android:text="@string/akun_terverifikasi
+"
                         android:textColor="@color/main_green"
                         android:layout_height="wrap_content"/>
                 </RelativeLayout>
@@ -119,7 +120,7 @@
                         android:fontFamily="@font/gothica1_regular"
                         android:textSize="12dp"
                         android:textColor="@color/black"
-                        android:text="Pengatruran Akun"/>
+                        android:text="@string/pengatruran_akun"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -141,7 +142,7 @@
                         android:fontFamily="@font/gothica1_regular"
                         android:textSize="12dp"
                         android:textColor="@color/black"
-                        android:text="Pengaturan Keamanan"/>
+                        android:text="@string/pengaturan_keamanan"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -163,7 +164,7 @@
                         android:fontFamily="@font/gothica1_regular"
                         android:textSize="12dp"
                         android:textColor="@color/black"
-                        android:text="Mulai Gunakan Resi di Toko Anda"/>
+                        android:text="@string/mulai_gunakan_resi_di_toko_anda"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -185,11 +186,23 @@
                         android:fontFamily="@font/gothica1_regular"
                         android:textSize="12dp"
                         android:textColor="@color/black"
-                        android:text="Bahasa"/>
+                        android:text="@string/bahasa"/>
                     <ImageView
+                        android:visibility="visible"
+                        android:id="@+id/ivBtnlangId"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_next_simple"
+                        android:src="@drawable/btn_in"
+                        android:background="@color/transparent"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"/>
+                    <ImageView
+                        android:visibility="visible"
+                        android:background="@color/transparent"
+                        android:id="@+id/ivBtnLangEn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btn_en"
                         android:layout_centerVertical="true"
                         android:layout_alignParentEnd="true"/>
                 </RelativeLayout>
@@ -219,7 +232,7 @@
                         android:fontFamily="@font/gothica1_regular"
                         android:textSize="12dp"
                         android:textColor="@color/black"
-                        android:text="Pengatruran Akun"/>
+                        android:text="Ketentuan Layanan"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -241,7 +254,7 @@
                         android:fontFamily="@font/gothica1_regular"
                         android:textSize="12dp"
                         android:textColor="@color/black"
-                        android:text="Pengaturan Keamanan"/>
+                        android:text="Kebijakan Privasi"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -263,29 +276,7 @@
                         android:fontFamily="@font/gothica1_regular"
                         android:textSize="12dp"
                         android:textColor="@color/black"
-                        android:text="Mulai Gunakan Resi di Toko Anda"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_next_simple"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#000000"/>
-                <RelativeLayout
-                    android:padding="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/gothica1_regular"
-                        android:textSize="12dp"
-                        android:textColor="@color/black"
-                        android:text="Bahasa"/>
+                        android:text="@string/pusat_bantuan"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -302,10 +293,11 @@
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Logout"
+            android:text="@string/logout"
             android:backgroundTint="@color/main_blue"
             android:layout_marginHorizontal="24dp"
             android:layout_marginBottom="50px"/>
+
     </RelativeLayout>
 </ScrollView>
 </RelativeLayout>
