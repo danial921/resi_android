@@ -50,6 +50,12 @@ class FragmentProfile : Fragment() {
             ivBtnlangId.setOnClickListener{
                 setLangEn()
             }
+            cvKebijakanPrivasi.setOnClickListener{
+                findNavController().navigate(R.id.action_fragmentProfile_to_fragmentKebijakanPrivasi)
+            }
+            cvKetentuanLayanan.setOnClickListener{
+                findNavController().navigate(R.id.action_fragmentProfile_to_fragmentKetentuanLayanan)
+            }
         }
     }
 
