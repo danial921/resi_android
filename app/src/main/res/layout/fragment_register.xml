@@ -87,7 +87,7 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/gothica1_semibold"
-                        android:text="Nama Pengguna"
+                        android:text="@string/nama_pengguna_register"
                         android:textColor="@color/black"
                         android:textSize="12dp"
                         android:textStyle="bold" />
@@ -131,7 +131,7 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/gothica1_semibold"
-                        android:text="Emial"
+                        android:text="@string/email"
                         android:textColor="@color/black"
                         android:textSize="12dp"
                         android:textStyle="bold" />
@@ -174,7 +174,7 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/gothica1_semibold"
-                        android:text="Nomor Telefon"
+                        android:text="@string/nomor_telepon"
                         android:textColor="@color/black"
                         android:textSize="12dp"
                         android:textStyle="bold" />
@@ -262,7 +262,7 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/gothica1_semibold"
-                        android:text="Ulangi Password"
+                        android:text="@string/ulangi_password"
                         android:textColor="@color/black"
                         android:textSize="12dp"
                         android:textStyle="bold" />

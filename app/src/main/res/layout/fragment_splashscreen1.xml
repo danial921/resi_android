@@ -25,7 +25,7 @@
             android:textAlignment="center"
             android:textColor="@color/white"
             android:layout_height="wrap_content"
-            android:text="Jangan Biarkan Nota Penting Hilang Dengan Sendirinya"/>
+            android:text="@string/jangan_biarkan_nota_penting_hilang_dengan_sendirinya"/>
         <ImageButton
             android:id="@+id/ibNext"
             android:layout_width="wrap_content"

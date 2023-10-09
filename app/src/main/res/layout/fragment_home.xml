@@ -37,7 +37,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Hallo,"
+                        android:text="@string/halo"
                         android:fontFamily="@font/gothica1_medium"
                         android:textSize="13dp"
                         android:textColor="@color/main_blue"/>
@@ -144,7 +144,7 @@
                                 android:paddingTop="5dp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Daftar Swalayan"
+                                android:text="@string/daftar_swalayan"
                                 android:fontFamily="@font/gothica1_medium"
                                 android:textSize="8dp"/>
                         </LinearLayout>
@@ -195,7 +195,7 @@
                     android:id="@+id/tvInfromationTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Resi Informasi"
+                    android:text="@string/resi_informasi"
                     android:fontFamily="@font/gothica1_extrabold"
                     android:textSize="15dp"
                     android:textColor="@color/main_dark_blue"
@@ -212,15 +212,15 @@
                     android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:id="@+id/tvHistoryTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Riwayat Pembelian"
                         android:fontFamily="@font/gothica1_extrabold"
-                        android:textSize="15dp"
+                        android:text="@string/riwayat_pembelian"
                         android:textColor="@color/main_dark_blue"
-                        />
+                        android:textSize="15dp" />
                     <ImageButton
                         android:backgroundTint="@color/transparent"
                         android:id="@+id/ivShowAllTransaction"

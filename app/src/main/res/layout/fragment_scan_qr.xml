@@ -94,7 +94,7 @@
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Arahkan QR code ke scanner resi"
+            android:text="@string/arahkan_qr_code_ke_scanner_resi"
             android:fontFamily="@font/gothica1_semibold"
             android:textSize="12dp"
             android:textColor="@color/main_white_82"/>
@@ -122,7 +122,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Profil Saya"
+                android:text="@string/profil_saya"
                 android:fontFamily="@font/poppins_semibold"
                 android:textSize="15dp"
                 android:textColor="@color/main_white"/>
@@ -165,7 +165,7 @@
                 android:layout_marginTop="7dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ID Customer"
+                android:text="@string/id_customer"
                 android:fontFamily="@font/gothica1_semibold"
                 android:textColor="@color/white"
                 android:textSize="13dp"/>

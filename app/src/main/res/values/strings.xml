@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name">RESI (Responsive Electronic System Invoice)</string>
-    <string name="title_activity_main_navigation">MainNavigation</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_navigation" translatable="false">MainNavigation</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="selamat_datang_login">Selamat Datang</string>
@@ -25,4 +25,86 @@
     <string name="signUp">Daftarkan</string>
     <string name="login_disini">Login Sekarang Disini</string>
     <string name="total_belanja">Total Belanja</string>
+    <string name="_1_informasi_yang_kami_kumpulkan">1. Informasi yang Kami Kumpulkan</string>
+    <string name="selamat_datang_di_aplikasi_resi_kebijakan_privasi_ini_menjelaskan_bagaimana_kami_mengumpulkan_menggunakan_dan_melindungi_informasi_pribadi_anda_kami_menghargai_privasi_anda_dan_berkomitmen_untuk_menjaga_kerahasiaan_informasi_yang_anda_berikan_kepada_kami">Selamat datang di Aplikasi RESI. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda. Kami menghargai privasi Anda dan berkomitmen untuk menjaga kerahasiaan informasi yang Anda berikan kepada kami.</string>
+    <string name="pt_indomaret_primatama">PT. Indomaret Primatama</string>
+    <string name="jl_keputih_no_3_sukolilo_surabaya_jawa_timur">Jl. Keputih No. 3 Sukolilo, Surabaya, Jawa Timur</string>
+    <string name="no">No.</string>
+    <string name="tgl_pembelian">Tgl Pembelian</string>
+    <string name="_06_juni_2023">: 06 Juni 2023</string>
+    <string name="item">item</string>
+    <string name="qty">qty</string>
+    <string name="unit_cost">unit cost</string>
+    <string name="total_cost">total cost</string>
+    <string name="diskon">Diskon</string>
+    <string name="harga_jual">Harga Jual</string>
+    <string name="total">Total</string>
+    <string name="reset_passwordmu_dengan_memasukkan_email">Reset Passwordmu dengan memasukkan email</string>
+    <string name="resetpassword">ResetPassword</string>
+    <string name="login_sekarang">Login Sekarang</string>
+    <string name="daftarkan_akunmu">Daftarkan Akunmu</string>
+    <string name="halo">Halo,</string>
+    <string name="daftar_swalayan">Daftar Swalayan</string>
+    <string name="resi_informasi">Resi Informasi</string>
+    <string name="riwayat_pembelian">Riwayat Pembelian</string>
+    <string name="kebijakan_privasi">Kebijakan Privasi</string>
+    <string name="a_informasi_pribadi_kami_dapat_mengumpulkan_informasi_pribadi_seperti_nama_alamat_email_dan_nomor_telepon_saat_anda_mendaftar_atau_menggunakan_aplikasi_kami">a. Informasi Pribadi: Kami dapat mengumpulkan informasi pribadi seperti nama, alamat email, dan nomor telepon saat Anda mendaftar atau menggunakan aplikasi kami.</string>
+    <string name="b_informasi_penggunaan_kami_dapat_mengumpulkan_informasi_tentang_cara_anda_menggunakan_aplikasi_kami_termasuk_riwayat_transaksi_dan_interaksi_anda_dengan_fitur_fitur_aplikasi">b. Informasi Penggunaan: Kami dapat mengumpulkan informasi tentang cara Anda menggunakan aplikasi kami, termasuk riwayat transaksi dan interaksi Anda dengan fitur-fitur aplikasi.</string>
+    <string name="c_informasi_perangkat_kami_dapat_mengumpulkan_informasi_perangkat_seperti_jenis_perangkat_sistem_operasi_dan_informasi_log_lainnya">c. Informasi Perangkat: Kami dapat mengumpulkan informasi perangkat seperti jenis perangkat, sistem operasi, dan informasi log lainnya.</string>
+    <string name="_2_penggunaan_informasi">2. Penggunaan Informasi</string>
+    <string name="a_kami_menggunakan_informasi_yang_kami_kumpulkan_untuk_menyediakan_layanan_mengelola_akun_anda_dan_memproses_transaksi_anda">a. Kami menggunakan informasi yang kami kumpulkan untuk menyediakan layanan, mengelola akun Anda, dan memproses transaksi Anda.</string>
+    <string name="b_kami_dapat_menggunakan_informasi_untuk_mengirim_pemberitahuan_pembaruan_atau_informasi_lain_yang_relevan">b. Kami dapat menggunakan informasi untuk mengirim pemberitahuan, pembaruan, atau informasi lain yang relevan.</string>
+    <string name="c_kami_tidak_akan_membagikan_informasi_pribadi_anda_kepada_pihak_ketiga_tanpa_izin_anda_kecuali_jika_diwajibkan_oleh_hukum">c. Kami tidak akan membagikan informasi pribadi Anda kepada pihak ketiga tanpa izin Anda, kecuali jika diwajibkan oleh hukum.</string>
+    <string name="_3_keamanan_informasi">3. Keamanan Informasi</string>
+    <string name="kami_menjaga_keamanan_informasi_anda_dengan_mengambil_langkah_langkah_yang_sesuai_untuk_melindungi_informasi_pribadi_anda_dari_akses_yang_tidak_sah_atau_pengungkapan">Kami menjaga keamanan informasi Anda dengan mengambil langkah-langkah yang sesuai untuk melindungi informasi pribadi Anda dari akses yang tidak sah atau pengungkapan.</string>
+    <string name="_4_cookie_dan_teknologi_serupa">4. cookie dan teknologi serupa</string>
+    <string name="kami_dapat_menggunakan_cookie_atau_teknologi_serupa_untuk_mengumpulkan_informasi_tentang_penggunaan_anda_anda_dapat_mengatur_preferensi_cookie_anda_melalui_pengaturan_peramban_anda">Kami dapat menggunakan cookie atau teknologi serupa untuk mengumpulkan informasi tentang penggunaan Anda. Anda dapat mengatur preferensi cookie Anda melalui pengaturan peramban Anda.</string>
+    <string name="_5_perubahan_dalam_kebijakan_privasi">5. Perubahan dalam Kebijakan Privasi</string>
+    <string name="kebijakan_privasi_ini_dapat_diperbarui_dari_waktu_ke_waktu_versi_terbaru_dari_kebijakan_akan_selalu_tersedia_di_aplikasi_kami">Kebijakan Privasi ini dapat diperbarui dari waktu ke waktu. Versi terbaru dari kebijakan akan selalu tersedia di aplikasi kami.</string>
+    <string name="_6_hak_privasi_pengguna">6. Hak Privasi Pengguna</string>
+    <string name="a_anda_memiliki_hak_untuk_mengakses_mengoreksi_atau_menghapus_informasi_pribadi_anda_yang_kami_miliki">a. Anda memiliki hak untuk mengakses, mengoreksi, atau menghapus informasi pribadi Anda yang kami miliki.</string>
+    <string name="b_jika_anda_memiliki_pertanyaan_atau_permintaan_terkait_privasi_silakan_hubungi_kami_di_ofcresi_gmail_com">b. Jika Anda memiliki pertanyaan atau permintaan terkait privasi, silakan hubungi kami di ofcresi@gmail.com.</string>
+    <string name="_7_perseteujuan_anda">7. Perseteujuan Anda</string>
+    <string name="dengan_menggunakan_aplikasi_resi_anda_setuju_dengan_kebijakan_privasi_ini_dan_pemrosesan_informasi_anda_sesuai_dengan_ketentuan_dalam_kebijakan_ini">Dengan menggunakan Aplikasi RESI, Anda setuju dengan Kebijakan Privasi ini dan pemrosesan informasi Anda sesuai dengan ketentuan dalam kebijakan ini.</string>
+    <string name="ketentuan_layanan">Ketentuan Layanan</string>
+    <string name="silakan_baca_dengan_seksama_ketentuan_layanan_ini_sebelum_menggunakan_aplikasi_resi_yang_dikembangkan_dengan_mengakses_atau_menggunakan_aplikasi_ini_anda_setuju_untuk_terikat_oleh_ketentuan_ketentuan_yang_tercantum_di_bawah_ini_jika_anda_tidak_setuju_dengan_ketentuan_ketentuan_ini_jangan_gunakan_aplikasi_ini">Silakan baca dengan seksama ketentuan layanan ini sebelum menggunakan aplikasi RESI yang dikembangkan. Dengan mengakses atau menggunakan Aplikasi ini, Anda setuju untuk terikat oleh ketentuan-ketentuan yang tercantum di bawah ini. Jika Anda tidak setuju dengan ketentuan-ketentuan ini, jangan gunakan Aplikasi ini.</string>
+    <string name="_1_deskripsi_layanan">1. Deskripsi Layanan</string>
+    <string name="aplikasi_resi_adalah_sebuah_platform_yang_memungkinkan_pengguna_untuk_menyimpan_mengelola_dan_melihat_nota_digital_serta_mengakses_berbagai_layanan_lain_yang_disediakan_oleh_pengembang">Aplikasi RESI adalah sebuah platform yang memungkinkan pengguna untuk menyimpan, mengelola, dan melihat nota digital, serta mengakses berbagai layanan lain yang disediakan oleh Pengembang.</string>
+    <string name="_2_penggunaan_aplikasi">2. Penggunaan Aplikasi</string>
+    <string name="a_anda_setuju_untuk_menggunakan_aplikasi_ini_hanya_untuk_tujuan_yang_sah_dan_sesuai_dengan_hukum_yang_berlaku">a. Anda setuju untuk menggunakan Aplikasi ini hanya untuk tujuan yang sah dan sesuai dengan hukum yang berlaku.</string>
+    <string name="b_anda_bertanggung_jawab_atas_semua_aktivitas_yang_terjadi_dalam_akun_anda_dan_harus_menjaga_kerahasiaan_kata_sandi_anda">b. Anda bertanggung jawab atas semua aktivitas yang terjadi dalam akun Anda dan harus menjaga kerahasiaan kata sandi Anda.</string>
+    <string name="c_anda_tidak_boleh_menggunakan_aplikasi_ini_untuk_tujuan_yang_melanggar_hak_cipta_merek_dagang_atau_hak_lainnya_milik_pihak_ketiga">c. Anda tidak boleh menggunakan Aplikasi ini untuk tujuan yang melanggar hak cipta, merek dagang, atau hak lainnya milik pihak ketiga.</string>
+    <string name="_3_privasi_dan_keamanan">3. Privasi dan Keamanan</string>
+    <string name="a_kami_menghormati_privasi_anda_dan_kami_akan_mengumpulkan_menggunakan_dan_mengungkapkan_data_anda_sesuai_dengan_kebijakan_privasi_kami_anda_setuju_dengan_penggunaan_data_anda_sesuai_dengan_kebijakan_privasi_tersebut">a. Kami menghormati privasi Anda dan kami akan mengumpulkan, menggunakan, dan mengungkapkan data Anda sesuai dengan Kebijakan Privasi kami. Anda setuju dengan penggunaan data Anda sesuai dengan Kebijakan Privasi tersebut.</string>
+    <string name="b_anda_bertanggung_jawab_atas_keamanan_data_anda_sendiri_dan_anda_harus_mengambil_tindakan_yang_sesuai_untuk_melindungi_informasi_pribadi_anda">b. Anda bertanggung jawab atas keamanan data Anda sendiri dan Anda harus mengambil tindakan yang sesuai untuk melindungi informasi pribadi Anda.</string>
+    <string name="_4_pembatasan_tanggung_jawab">4. Pembatasan Tanggung Jawab</string>
+    <string name="a_pengembang_tidak_bertanggung_jawab_atas_kerugian_atau_kerusakan_yang_timbul_akibat_penggunaan_aplikasi_ini">a. Pengembang tidak bertanggung jawab atas kerugian atau kerusakan yang timbul akibat penggunaan Aplikasi ini.</string>
+    <string name="b_aplikasi_ini_disediakan_apa_adanya_tanpa_jaminan_apa_pun_baik_tersurat_maupun_tersirat">b. Aplikasi ini disediakan apa adanya tanpa jaminan apa pun, baik tersurat maupun tersirat.</string>
+    <string name="_5_perubahan_pada_ketentuan_layanan">5. Perubahan pada Ketentuan Layanan</string>
+    <string name="pengembang_berhak_untuk_mengubah_memodifikasi_atau_memperbarui_ketentuan_layanan_ini_sesuai_dengan_kebijakan_yang_berlaku_perubahan_tersebut_akan_diberlakukan_segera_setelah_diposting_di_aplikasi">Pengembang berhak untuk mengubah, memodifikasi, atau memperbarui ketentuan layanan ini sesuai dengan kebijakan yang berlaku. Perubahan tersebut akan diberlakukan segera setelah diposting di Aplikasi.</string>
+    <string name="_6_hukum_yang_berlaku">6. Hukum yang Berlaku</string>
+    <string name="ketentuan_layanan_ini_diatur_oleh_dan_diinterpretasikan_sesuai_dengan_hukum_yang_berlaku_di_indonesia_anda_setuju_bahwa_pengadilan_di_indonesia_akan_memiliki_yurisdiksi_eksklusif_atas_segala_sengketa_yang_timbul_dari_atau_terkait_dengan_penggunaan_aplikasi_ini">Ketentuan layanan ini diatur oleh dan diinterpretasikan sesuai dengan hukum yang berlaku di Indonesia. Anda setuju bahwa pengadilan di Indonesia akan memiliki yurisdiksi eksklusif atas segala sengketa yang timbul dari atau terkait dengan penggunaan Aplikasi ini.</string>
+    <string name="_7_hubungi_kami">7. Hubungi Kami</string>
+    <string name="jika_anda_memiliki_pertanyaan_atau_komentar_tentang_ketentuan_layanan_ini_anda_dapat_menghubungi_kami_melalui_ofcresi_gmail_com">Jika Anda memiliki pertanyaan atau komentar tentang Ketentuan Layanan ini, Anda dapat menghubungi kami melalui ofcresi@gmail.com.</string>
+    <string name="akun_terverifikasi">Akun Terverifikasi</string>
+    <string name="pengatruran_akun">Pengatruran Akun</string>
+    <string name="pengaturan_keamanan">Pengaturan Keamanan</string>
+    <string name="mulai_gunakan_resi_di_toko_anda">Mulai Gunakan Resi di Toko Anda</string>
+    <string name="bahasa">Bahasa</string>
+    <string name="pusat_bantuan">Pusat Bantuan</string>
+    <string name="logout">Logout</string>
+    <string name="nama_pengguna_register">Nama Pengguna</string>
+    <string name="email">Email</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="ulangi_password">Ulangi Password</string>
+    <string name="arahkan_qr_code_ke_scanner_resi">Arahkan QR code ke scanner resi</string>
+    <string name="profil_saya">Profil Saya</string>
+    <string name="id_customer">ID Customer</string>
+    <string name="profil_saya_light">Profil Saya</string>
+    <string name="_light">ID Customer</string>
+    <string name="jangan_biarkan_nota_penting_hilang_dengan_sendirinya">Jangan Biarkan Nota Penting Hilang Dengan Sendirinya</string>
+    <string name="ubah_catatanmu_lebih_efisien_dengan_nota_digital">Ubah Catatanmu, Lebih Efisien dengan Nota Digital!</string>
+    <string name="histori_transaksi">Histori Transaksi</string>
+    <string name="cari_nama_atau_jenis_transaksi">cari nama atau jenis transaksi</string>
+    <string name="nama_pengguna">Nama Pengguna</string>
 </resources>
