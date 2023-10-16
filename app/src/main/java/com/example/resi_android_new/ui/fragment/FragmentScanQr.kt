@@ -5,6 +5,7 @@ import android.graphics.Bitmap
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -65,6 +66,7 @@ class FragmentScanQr : Fragment() {
 
     fun setQrCode() {
         val idUser = requireActivity().getSharedPreferences(Constant.dataUser, Context.MODE_PRIVATE).getString("idUser",null)
+        Log.d("QRCodeDebug", "ID User: $idUser")
         val qrCodeBitmap = idUser?.let { encodeQrAsBitmap(it, 1000, 1000) }
         binding.ivQrCode.setImageBitmap(qrCodeBitmap)
     }

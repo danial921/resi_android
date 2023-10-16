@@ -1,5 +1,6 @@
 package com.example.resi_android_new.ui.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -10,6 +11,7 @@ import com.example.resi_android_new.databinding.ItemInformationHistoryBinding
 class DetailNotaAdapter (private val listBillDetail : List<ApiProductdetail>) : RecyclerView.Adapter<DetailNotaAdapter.ViewHolder>() {
     class ViewHolder(val binding : ItemDetailNotaBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(item : ApiProductdetail){
+            Log.d("ViewHolder", "Binding data: ${item}")
             binding.detailProduct = item
             binding.tvName.text = item.name
             binding.tvQty.text = item.quantity.toString()

@@ -20,5 +20,5 @@ class PaymentViewModel  @Inject constructor(private var paymentRepo : PaymentRep
 
     fun clearChosenPaymentHistory() = paymentRepo.clearChosenPayment()
 
-    fun getDetailPayment(idBill : String) : LiveData<ApiGetdetailNota?> = paymentRepo.getDetailBill(idBill)
+    fun getDetailPayment(shopName : String, type : String, number: String) : LiveData<ApiGetdetailNota?> = paymentRepo.getDetailBill(shopName,type,number)
 }

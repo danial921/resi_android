@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/fragmentProfile">
+    app:startDestination="@id/fragmrntScanQr">
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.resi_android_new.ui.fragment.LoginFragment"
@@ -149,10 +149,18 @@
     <fragment
         android:id="@+id/fragmentKebijakanPrivasi"
         android:name="com.example.resi_android_new.ui.fragment.FragmentKebijakanPrivasi"
-        android:label="FragmentKebijakanPrivasi" />
+        android:label="FragmentKebijakanPrivasi" >
+        <action
+            android:id="@+id/action_fragmentKebijakanPrivasi_to_fragmentProfile"
+            app:destination="@id/fragmentProfile" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentKetentuanLayanan"
         android:name="com.example.resi_android_new.ui.fragment.FragmentKetentuanLayanan"
-        android:label="fragment_layanan"
-        tools:layout="@layout/fragment_layanan" />
+        android:label="fragmentKetentuanLayanan"
+        tools:layout="@layout/fragment_ketentuan_layanan">
+        <action
+            android:id="@+id/action_fragmentKetentuanLayanan_to_fragmentProfile"
+            app:destination="@id/fragmentProfile" />
+    </fragment>
 </navigation>

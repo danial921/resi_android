@@ -17,6 +17,7 @@ interface APIService {
     @GET("bill")
     fun getAllBill(@Header("Authorization") token : String, @Query("limit") limit : Int) : Call<GetHistoryPayment>
 
-    @GET("bill/{idBill}")
-    fun getDetailBillById(@Path("idBill") idBill : String) : Call<ApiGetdetailNota>
+    @GET("bill/{shopName}/{type}/{number}")
+    fun getDetailBillById(@Path("shopName") shopName: String, @Path("type") type: String, @Path("number") number: String): Call<ApiGetdetailNota>
+
 }

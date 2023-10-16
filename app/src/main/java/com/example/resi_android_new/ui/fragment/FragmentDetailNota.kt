@@ -1,6 +1,7 @@
 package com.example.resi_android_new.ui.fragment
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.SharedPreferences
 import android.os.Build
 import android.os.Bundle
@@ -14,6 +15,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.resi_android_new.R
+import com.example.resi_android_new.data.Constant
 import com.example.resi_android_new.data.Constant.dataUser
 import com.example.resi_android_new.data.dummy.DummyData
 import com.example.resi_android_new.data.response.*
@@ -47,9 +49,10 @@ class FragmentDetailNota : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val paymentDetail: DetailHistoryPayment? = arguments?.getSerializable("payment_history_detail") as? DetailHistoryPayment
         getDataFromBundle()
         setOnClicListener()
-
     }
     private fun setOnClicListener(){
         binding.apply {
@@ -60,6 +63,7 @@ class FragmentDetailNota : Fragment() {
     }
 
     private fun getDataFromBundle() {
+        Log.d("masuk1","masuk1")
         paymentVM.getChosenPaymentHistory().observe(viewLifecycleOwner){
             if (it != null) {
                 clickedPayment = it
@@ -70,7 +74,9 @@ class FragmentDetailNota : Fragment() {
     }
 
     private fun getBillData(){
-        paymentVM.getDetailPayment(clickedPayment.id).observe(viewLifecycleOwner){
+        Log.d("masuk2",clickedPayment.id)
+        val parts = clickedPayment.id.split("/")
+        paymentVM.getDetailPayment(parts[0],parts[1],parts[2]).observe(viewLifecycleOwner){
             if (it != null) {
                 Log.d("Detail Bill Result",it.toString())
                 showData(it.detaiBill)
@@ -79,7 +85,7 @@ class FragmentDetailNota : Fragment() {
     }
 
     private fun showData(dataproduct: ApiDetaiBill){
-
+        Log.d("data product",dataproduct.ShopName)
         binding.tvShopName.text = dataproduct.ShopName
         binding.tvAdrress.text = dataproduct.shopAdress
         binding.tvphoneNumber.text = dataproduct.PhoneNumber

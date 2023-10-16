@@ -10,7 +10,7 @@ data class LoginResponse(
     @SerializedName("expires_in")
     val expiresIn: Int,
 
-    @SerializedName("uuid")
+    @SerializedName("id")
     val uuid: String,
 
     @SerializedName("name")

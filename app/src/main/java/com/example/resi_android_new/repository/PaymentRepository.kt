@@ -59,10 +59,12 @@ class PaymentRepository @Inject constructor(var apiService: APIService) {
     val getDetailPaymentBill: LiveData<ApiGetdetailNota?> = _getDetailPaymentBill
 
     fun getDetailBill (
-        idBill: String,
+        shopName : String,
+        type : String,
+        number: String
     ):LiveData<ApiGetdetailNota?>{
         Log.d("Debug", "Error Check")
-        apiService.getDetailBillById(idBill)
+        apiService.getDetailBillById(shopName,type,number)
             .enqueue(object : Callback<ApiGetdetailNota> {
                 override fun onResponse(
                     call: Call<ApiGetdetailNota>,

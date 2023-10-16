@@ -75,13 +75,19 @@ class TransactionHistory : Fragment() {
     private fun setDataToRVinformation(data: List<DetailHistoryPayment>){
         val adapter =  PaymentAdapter(data)
         val layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+
         binding.rvTransaction.adapter = adapter
         binding.rvTransaction.layoutManager = layoutManager
 
         adapter.onClick = {
             paymentVM.clearChosenPaymentHistory()
             paymentVM.setChosenPaymentHistory(it)
-            findNavController().navigate(R.id.action_transactionHistory_to_fragmentDetailNota)
+
+            val bundle = Bundle().apply {
+                putSerializable("payment_history_detail", it)
+            }
+
+            findNavController().navigate(R.id.action_transactionHistory_to_fragmentDetailNota, bundle)
         }
     }
 }

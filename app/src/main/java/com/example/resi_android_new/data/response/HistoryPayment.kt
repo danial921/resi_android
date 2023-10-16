@@ -1,6 +1,7 @@
 package com.example.resi_android_new.data.response
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class GetPreviewHistoryPayment(
     @field:SerializedName("title")
@@ -38,7 +39,7 @@ data class DetailHistoryPayment(
 
     @field:SerializedName("total")
     val total: String,
-): java.io.Serializable
+): Serializable
 
 data class GetDetailPayment(
     @field:SerializedName("shopname")
